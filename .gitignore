@@ -1,0 +1,24 @@
+# Logs                                # Sección de registros y archivos de depuración
+logs                                  # Ignora la carpeta 'logs' donde se guardan registros del sistema
+*.log                                 # Ignora cualquier archivo con extensión .log
+npm-debug.log*                        # Ignora archivos de depuración generados por npm
+yarn-debug.log*                       # Ignora archivos de depuración generados por Yarn
+yarn-error.log*                       # Ignora archivos de errores generados por Yarn
+pnpm-debug.log*                       # Ignora archivos de depuración generados por pnpm
+lerna-debug.log*                      # Ignora archivos de depuración generados por Lerna
+
+node_modules                          # Ignora la carpeta con todas las dependencias instaladas de Node.js
+dist                                  # Ignora la carpeta de producción/compilación del proyecto
+dist-ssr                              # Ignora la carpeta de compilación para Server-Side Rendering
+*.local                               # Ignora cualquier archivo con extensión .local (como variables de entorno locales)
+
+# Editor directories and files        # Sección de configuraciones de editores de código y sistemas operativos
+.vscode/*                             # Ignora todo el contenido dentro de la carpeta de configuración de VS Code
+!.vscode/extensions.json              # Excepción: Sí permite subir el archivo extensions.json de VS Code
+.idea                                 # Ignora la carpeta de configuración de entornos de JetBrains (WebStorm, etc.)
+.DS_Store                             # Ignora el archivo oculto de preferencias de carpetas de macOS
+*.suo                                 # Ignora archivos de opciones de usuario de Visual Studio
+*.ntvs*                               # Ignora archivos de configuración de Node.js Tools for Visual Studio
+*.njsproj                             # Ignora archivos de proyectos de Node.js para Visual Studio
+*.sln                                 # Ignora archivos de solución (.sln) de Visual Studio
+*.sw?                                 # Ignora archivos de intercambio/respaldo temporales de editores como Vim

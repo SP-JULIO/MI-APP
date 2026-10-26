@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json", // Enlace al esquema JSON para validación y autocompletado del archivo en el editor
+  "plugins": ["react", "oxc"],                                 // Habilita los plugins con reglas específicas para React y el parser OXC
+  "rules": {                                                  // Sección donde se configuran y personalizan las reglas de linter
+    "react/rules-of-hooks": "error",                          // Fuerza el cumplimiento estricto de las reglas de los Hooks de React (lanza error si no se cumplen)
+    "react/only-export-components": ["warn", { "allowConstantExport": true }] // Advierte si un archivo exporta algo que no sea un componente, pero permite exportar constantes
+  }
+}
